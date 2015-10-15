@@ -1,0 +1,29 @@
+body {
+background: rgb(204,204,204);
+}
+.page {
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  display: block;
+  padding: 64px;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+.header{
+  text-align: center;
+}
+#pic{
+  padding: 10px 0 0 0;
+}
+.content{
+  font-size: 28px;
+  line-height: 1.5;
+}
+.content p{
+  padding: 0 0 0 20px;
+}
+.content ul{
+  padding: 0 0 0 60px;
+}
