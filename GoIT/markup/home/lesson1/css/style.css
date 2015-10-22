@@ -17,11 +17,10 @@ background: rgb(204,204,204);
   padding: 10px 0 0 0;
 }
 .content{
-  font-size: 18px;
-  /*line-height: 1.5;*/
+  font-size: 20px;
 }
 .paragraph{
-  padding-top: 18px;  
+  padding-top: 18px;
 }
 
 .underline{
