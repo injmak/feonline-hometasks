@@ -3,13 +3,12 @@ background: rgb(204,204,204);
 }
 .page {
   background: white;
-  width: 21cm;
-  height: 29.7cm;
+  width: 35%;
   display: block;
-  padding: 64px;
+  padding: 45px;
   margin: 0 auto;
-  margin-bottom: 0.5cm;
-  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 .header{
   text-align: center;
@@ -18,12 +17,24 @@ background: rgb(204,204,204);
   padding: 10px 0 0 0;
 }
 .content{
-  font-size: 28px;
-  line-height: 1.5;
+  font-size: 18px;
+  /*line-height: 1.5;*/
 }
+.paragraph{
+  padding-top: 18px;  
+}
+
+.underline{
+  border-bottom: 2px solid grey;
+}
+
 .content p{
   padding: 0 0 0 20px;
 }
 .content ul{
   padding: 0 0 0 60px;
+}
+.content span{
+  margin-bottom: 2px;
+  display: block;
 }
