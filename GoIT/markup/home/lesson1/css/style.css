@@ -3,7 +3,7 @@ background: rgb(204,204,204);
 }
 .page {
   background: white;
-  width: 35%;
+  width: 655px;
   display: block;
   padding: 45px;
   margin: 0 auto;
@@ -13,26 +13,25 @@ background: rgb(204,204,204);
 .header{
   text-align: center;
 }
-#pic{
-  padding: 10px 0 0 0;
+.pic{
+  height: 200px;
+  margin: 10px 0 10px 0;
 }
 .content{
   font-size: 20px;
 }
 .paragraph{
-  padding-top: 18px;
+  margin-top: 40px;
 }
 
 .underline{
   border-bottom: 2px solid grey;
 }
 
-.content p{
-  padding: 0 0 0 20px;
+.content p, ul{
+  margin: 0 0 20px 20px;
 }
-.content ul{
-  padding: 0 0 0 60px;
-}
+
 .content span{
   margin-bottom: 2px;
   display: block;
