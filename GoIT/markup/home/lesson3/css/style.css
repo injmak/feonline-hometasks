@@ -22,13 +22,13 @@ body{
 }
 .header{
   margin-top: 50px;
-  /*padding-top: 50px;*/
 }
 
 .header-menu{
   margin-top: 40px;
   position: relative;
   overflow: hidden;
+  font-size: 0;
   background: #444343; /* Old browsers */
   background: -moz-linear-gradient(top, #444343 0%, #5e5e5e 0%, #444343 100%, #444343 100%, #5e5e5e 100%, #444343 100%, #444343 100%, #444343 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444343), color-stop(0%,#5e5e5e), color-stop(100%,#444343), color-stop(100%,#444343), color-stop(100%,#5e5e5e), color-stop(100%,#444343), color-stop(100%,#444343), color-stop(100%,#444343)); /* Chrome,Safari4+ */
@@ -39,19 +39,21 @@ body{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444343', endColorstr='#444343',GradientType=0 ); /* IE6-9 */
 }
 .header-menu li{
-  float: left;
   list-style: none;
+  display: inline-block;
+  border-left:  1px solid transparent;
+  border-right:  1px solid transparent;
 }
 .header-menu a{
-  padding: 0 42px;
+  margin: 0 40px;
   line-height: 40px;
   font-size: 14px;
   text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(57, 56, 56, 1);
   color: #ffffff;
   display: block;
 }
-.header-menu a:hover{
-  padding: 0 41px;
+.header-menu li:hover{
   border-left:  1px solid #838383;
   border-right:  1px solid #838383;
   background: #444343; /* Old browsers */
@@ -64,6 +66,18 @@ body{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444343', endColorstr='#2e2e2e',GradientType=0 ); /* IE6-9 */
 }
 
+.header-menu .header-menu-active{
+  border-left:  1px solid #838383;
+  border-right:  1px solid #838383;
+  background: #444343; /* Old browsers */
+  background: -moz-linear-gradient(top, #444343 0%, #4a4a4a 0%, #444343 100%, #444343 100%, #5e5e5e 100%, #444343 100%, #444343 100%, #2e2e2e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444343), color-stop(0%,#4a4a4a), color-stop(100%,#444343), color-stop(100%,#444343), color-stop(100%,#5e5e5e), color-stop(100%,#444343), color-stop(100%,#444343), color-stop(100%,#2e2e2e)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #444343 0%,#4a4a4a 0%,#444343 100%,#444343 100%,#5e5e5e 100%,#444343 100%,#444343 100%,#2e2e2e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #444343 0%,#4a4a4a 0%,#444343 100%,#444343 100%,#5e5e5e 100%,#444343 100%,#444343 100%,#2e2e2e 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #444343 0%,#4a4a4a 0%,#444343 100%,#444343 100%,#5e5e5e 100%,#444343 100%,#444343 100%,#2e2e2e 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #444343 0%,#4a4a4a 0%,#444343 100%,#444343 100%,#5e5e5e 100%,#444343 100%,#444343 100%,#2e2e2e 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444343', endColorstr='#2e2e2e',GradientType=0 ); /* IE6-9 */
+}
 
 /*CONTENT*/
 .content{
@@ -87,13 +101,18 @@ body{
 }
 .left-side-menu a{
   line-height: 40px;
-  padding-left: 22px;
+  margin-left: 22px;
   color: #7a7878;
   text-decoration: none;
   display: block;
 }
-.left-side-menu a:hover{
-  padding-left: 35px;
+.left-side-menu li:hover{
+  padding-left: 14px;
+  background: #f9f9f9;
+}
+
+.left-side-menu-active{
+  padding-left: 14px;
   background: #f9f9f9;
 }
 
@@ -107,40 +126,43 @@ body{
   text-align: center;
 }
 .text{
-  padding: 40px 24px 0 24px;
+  margin: 40px 24px 0 24px;
   line-height: 20px;
   font-size: 14px;
   color: #2c2c2c;
 }
 /*FOOTER*/
 .footer{
-  padding: 50px 0;
-}
-.footer-menu{
   position: relative;
   overflow: hidden;
+  margin: 50px 0;
   background: #e1e1e1;
+}
+.footer-menu{
+  float: left;
 }
 .footer-menu li{
   float: left;
   list-style: none;
 }
 .footer-menu a{
-  padding: 0 42px;
+  margin: 0 42px;
   color: #2c2c2c;
   font-size: 14px;
   line-height: 40px;
   text-decoration: none;
   display: block;
 }
-
 .footer-menu a:hover{
   text-decoration: underline;
 }
-.footer-menu .rights{
+.footer-menu .footer-menu-active{
+  text-decoration: underline;
+}
+.rights{
   float: right;
   color: #2c2c2c;
   font-size: 14px;
   line-height: 40px;
-  padding-right: 25px;
+  margin-right: 25px;
 }
