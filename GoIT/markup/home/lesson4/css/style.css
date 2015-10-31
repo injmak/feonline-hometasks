@@ -49,7 +49,8 @@ body{
 }
 .contacts{
   float: right;
-  margin: 12px 34px 0 0;
+  margin-top: 12px;
+  margin-right: 34px;
   line-height: 19px;
   font-size: 12px;
   color: #5fa5bb;
@@ -60,8 +61,9 @@ body{
   line-height: 22px;
 }
 .countries{
+  margin-top: 104px;
+  margin-right: 22px;
   font-size: 10px;
-  margin: 104px 22px 0 0;
 }
 .country{
   float: right;
@@ -75,7 +77,7 @@ body{
   color: #128aa7;
 }
 .country img{
-  margin: 0 17px 0 0;
+  margin-right: 17px;
 }
 
 /*PHOTO, MENU*/
@@ -109,7 +111,7 @@ img{
   display: inline-block;
 }
 .header-menu li:first-child{
-  padding: 0 0 0 33px;
+  padding-left: 33px;
 }
 .header-menu a{
   padding: 0 33px;
@@ -120,16 +122,16 @@ img{
 }
 
 .header-menu img{
-  margin: 0 0 7px -27px;
+  margin-bottom: 7px;
+  margin-left: -27px;
 }
 
 .submenu{
   padding-bottom: 9px;
+  width: 148px;
   position: absolute;
   left: 175px;
   top: 29px;
-  margin: 0;
-  width: 148px;
   background: #303030;
   -webkit-box-shadow: 0px 4px 8px 0px rgba(48,48,48,1);
   -moz-box-shadow: 0px 4px 8px 0px rgba(48,48,48,1);
@@ -143,8 +145,7 @@ img{
   border-bottom: 1px solid #CCC;
 }
 .submenu a{
-  display: block;
-  padding: 0 0 0 8px;
+  padding-left: 8px;
   line-height: 22px;
   display: block;
   color: #d5d5d5;
