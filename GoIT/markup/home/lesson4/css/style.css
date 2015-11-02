@@ -114,6 +114,7 @@ img{
   padding-left: 33px;
 }
 .header-menu a{
+  display: block;
   padding: 0 33px;
   line-height: 28px;
   font-size: 14px;
@@ -145,7 +146,6 @@ img{
 .submenu a{
   padding-left: 8px;
   line-height: 22px;
-  display: block;
   color: #d5d5d5;
 }
 
@@ -162,11 +162,18 @@ img{
 }
 
 .submenu-serv{
-  left: 325px;
+  left: 330px;
 }
 
 .submenu-part{
-  left: 433px;
+  left: 443px;
+}
+
+.triangle > a:after  {
+  position: relative;
+  top: 0px;
+  left: 6px;
+  content: url('../img/white_triangle.png');
 }
 
 /*CONTENT*/
