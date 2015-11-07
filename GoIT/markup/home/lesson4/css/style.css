@@ -60,15 +60,18 @@ body{
   font-weight: bold;
   line-height: 22px;
 }
+
 .countries{
   margin-top: 104px;
   margin-right: 22px;
   font-size: 10px;
+  list-style: none;
 }
 .country{
   float: right;
 }
 .country img, .country a {
+  text-align: center;
   display: block;
 }
 .country a{
@@ -77,8 +80,9 @@ body{
   color: #128aa7;
 }
 .country img{
-  margin-right: 17px;
+  margin: auto 7px;
 }
+
 
 /*PHOTO, MENU*/
 .photo{
@@ -178,26 +182,60 @@ img{
 
 /*CONTENT*/
 .wrapper{
+  position: relative;
   overflow: hidden;
-  display: table;
 }
-.sidebar{
-  display: table-cell;
+
+
+.left-fon {
+width: 100%;
+background: #edeef0;
+float: left;
+position: relative;
+right: 581px;
+border-right: 1px solid #c7cacf;
+}
+.central-fon {
+width: 100%;
+background: #fff;
+float: left;
+position: relative;
+right: 211px;
+border-right: 1px solid #c7cacf;
+}
+.right-fon {
+width: 100%;
+background: #edeef0;
+float: left;
+border-right: 1px solid #c7cacf;
+border-left: 1px solid #c7cacf;
+}
+
+
+.left-sidebar{
+  float: left;
   width: 208px;
-  border-left: 1px solid #c7cacf;
-  border-right: 1px solid #c7cacf;
-  background: #edeef0;
+  overflow: hidden;
+  position:relative;
+  /*border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;*/
+  left: 790px;
 }
 .content{
-  display: table-cell;
+  float: left;
   width: 582px;
+  overflow: hidden;
+  position:relative;
+  left:70%;
 }
-.news{
-  display: table-cell;
+.right-sidebar{
+  float: right;
   width: 208px;
-  border-left: 1px solid #c7cacf;
-  border-right: 1px solid #c7cacf;
-  background: #edeef0;
+  /*border-left: 1px solid #c7cacf;*/
+  /*border-right: 1px solid #c7cacf;*/
+  overflow: hidden;
+  position:relative;
+  left: 791px;
 }
 
 .text{
@@ -217,6 +255,8 @@ img{
 
 /*FOOTER*/
 .copyright{
+  position: relative;
+  height: 50px;
   margin: 12px auto;
   text-align: center;
   color: #dee7ee;
