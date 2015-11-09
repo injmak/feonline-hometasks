@@ -21,7 +21,7 @@ body{
 /*HEADER*/
 .header{
   height: 36px;
-  /*margin: 0 auto;*/
+  /*padding: 11px 0 0 0;*/
   background-color: #085393;
 }
 
@@ -29,7 +29,43 @@ body{
   list-style: none;
 }
 
-.header-menu li, .flag, .enter a, .enter p{
+.header-menu li{
+
+}
+
+/*.header-menu li{
+  list-style: none;
+  display: inline-block;
+  border-left:  1px solid transparent;
+  border-right:  1px solid transparent;
+}*/
+
+.header-menu a{
+  padding: 0 12px;
+  display: block;
+  line-height: 36px;
+  text-decoration: none;
+  color: #60b5ed;
+}
+
+.header-menu a:hover{
+  background-color: #4eabda;
+  color: #fff;
+}
+
+.header .flag a{
+  color: #eaeaea;
+  text-decoration: none;
+  line-height: 36px;
+}
+
+.header .enter, .header .enter a{
+  color: #fff;
+  line-height: 36px;
+}
+
+.header-menu li,
+.flag, .enter a, .enter p{
   float: right;
   margin: 0 5px;
 }
