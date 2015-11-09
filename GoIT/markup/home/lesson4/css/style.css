@@ -41,7 +41,9 @@ body{
   z-index: 5;
   left: 71px;
   top: 98px;
+  color: #5fa5bb;
 }
+
 
 /*CONTACTS, COUNTRIES*/
 .right-head-wrapper{
@@ -56,7 +58,13 @@ body{
   color: #5fa5bb;
 
 }
-.contacts::first-line{
+/*В Chrome работает в Mozilla нет */
+/*.contacts::first-line{
+  font-weight: bold;
+  line-height: 22px;
+}*/
+
+.contacts-header{
   font-weight: bold;
   line-height: 22px;
 }
@@ -67,19 +75,19 @@ body{
   font-size: 10px;
   list-style: none;
 }
-.country{
+.countries li{
   float: right;
 }
-.country img, .country a {
+.countries img, .countries a {
   text-align: center;
   display: block;
 }
-.country a{
-  margin: 4px 7px 0 -10px;
+.countries a{
+  margin: 4px 12px 0 -10px;
   text-align: center;
   color: #128aa7;
 }
-.country img{
+.countries img{
   margin: auto 7px;
 }
 
