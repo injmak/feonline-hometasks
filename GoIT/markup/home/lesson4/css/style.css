@@ -4,7 +4,7 @@
 }
 
 body{
-  background-image: url('../img/background.png');
+  background: #000 url('../img/background.png') repeat-x 0 0;
   font-family: "Tahoma", sans-serif;
 }
 
