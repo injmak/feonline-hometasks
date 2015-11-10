@@ -231,10 +231,10 @@ border-left: 1px solid #c7cacf;
 }
 .content{
   float: left;
-  width: 582px;
+  width: 567px;
   overflow: hidden;
   position:relative;
-  left:70%;
+  left:80%;
 }
 .right-sidebar{
   float: right;
