@@ -24,7 +24,7 @@
           <li><a href="#">Ajuda</a></li>
           <li><a href="#">Contato</a></li>
           <li><a href="#">Forum</a></li>
-          <li><a href="#">Vender</a></li>
+          <li class="active"><a href="#">Vender</a></li>
           <li><a href="#">Meu YouBike</a></li>
         </ul>
 
@@ -35,18 +35,33 @@
             <p>Cadastre-se</p>
           </div>
           <div class="form-body">
-            <a href="#">Log In with Facebook</a>
+            <div class="button-link">
+              <a href="#">
+                <span class="f"><img src="img/f.png" alt="" /></span>
+                <span class="caption">
+                  <strong>Log In</strong> with <strong>Facebook</strong>
+                </span>
+                <span class="arrow"><img src="img/arrow.png" alt="" /></span>
+              </a>
+            </div>
+            <div class="ou-element">
+              <span>OU</span>
+            </div>
             <form action="POST" class="form-content">
-              <div class="form-input"><input class = "text-input" type="text"></div>
-              <div class="form-input"><input class = "text-input" type="text"></div>
-              <div class="form-input"><input class = "text-input" type="text"></div>
-              <div class="form-input"><input class = "text-input" type="text"></div>
-              <div class="form-input"><input class = "text-input" type="text"></div>
-              <div class="form-input"><input class = "checkbox-input" type="checkbox"></div>
-              <div class="form-input"><input class = "submit-input" type="submit" value="Create my Account"></div>
+              <div><input type="text" placeholder="First name"></div>
+              <div><input type="text" placeholder="Last name"></div>
+              <div><input type="text" placeholder="Email Address"></div>
+              <div><input type="text" placeholder="Choose Password"></div>
+              <div><input type="text" placeholder="Password Confirm"></div>
+              <div class="checkbox-input">
+                <input id = "checkbox1" type="checkbox"><label for="checkbox1">Send me YouBike updates and tip</label>
+              </div>
+              <div><input class = "submit-input" type="submit" value="Create my Account"></div>
             </form>
-            <p>By clicking the button above, you agree to the Terms of Service</p>
-            <p>Xiew our Privacy Policy.</p>
+            <div class="bottom-text">
+              <p>By clicking the button above, you agree to the Terms of Service</p>
+              <p>Xiew our Privacy Policy.</p>
+            </div>
           </div>
         </div>
       </div>

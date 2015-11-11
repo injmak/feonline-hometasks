@@ -53,6 +53,11 @@ body{
   color: #fff;
 }
 
+.active a{
+  background-color: #4eabda;
+  color: #fff;
+}
+
 .header .flag a{
   color: #eaeaea;
   text-decoration: none;
@@ -98,32 +103,124 @@ body{
   text-align: center;
 }
 .form-header{
-  /*padding: 2px 0 2px 0;*/
-  margin: 0 0 2px 0;
+  margin-bottom: 2px;
   height: 62px;
+  font-size: 24px;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   background: rgba(0, 0, 0, 0.6);
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 0.6);
 }
+.form-header p{
+  margin-top: 18px;
+}
 
 .form-body{
-  height:547px;
+  /*height:547px;*/
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   background: rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.6);
 }
 
-.form-input{
+
+.form-wrapper p{
+  color: #cccccc;
+}
+
+.button-link{
+  margin: 36px auto;
+  width: 284px;
+  height: 35px;
+  border-top: 1px #778cb9 solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2f4479+0,3b5399+100 */
+  background: #2f4479; /* Old browsers */
+  background: -moz-linear-gradient(top,  #2f4479 0%, #3b5399 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #2f4479 0%,#3b5399 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #2f4479 0%,#3b5399 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f4479', endColorstr='#3b5399',GradientType=0 ); /* IE6-9 */
+}
+
+.button-link .arrow{
+  padding-left: 19px;
+  padding-right: 16px;
+}
+
+.button-link .f{
+  padding-left: 15px;
+  padding-right: 13px;
+  border-right: 1px #203a75 solid;
+  padding-top: 8px;
+  line-height: 27px;
+  display: block;
+  float: left;
+}
+
+
+.button-link .caption{
+  border-left: 1px #4e67a9 solid;
+  padding-left: 30px;
+}
+
+.button-link .arrow,
+.button-link .caption{
+  line-height: 35px;
+  display: block;
+  float: left;
+}
+
+.button-link a{
+  color: #fbffff;
+  text-decoration:none;
+}
+
+.ou-element{
+  margin-top: 27px;
+  margin-bottom: 23px;
+}
+.ou-element span{
+  color: #999999;
+}
+
+.ou-element span::before,
+.ou-element span::after{
+  content: "";
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 124px;
+  border-top: 1px #666666 solid;
+  border-bottom: 1px #000 solid;
+}
+
+.ou-element span::before{
+  margin-right: 6px;
+}
+.ou-element span::after{
+  margin-left: 6px;
+}
+
+.form-wrapper input {
+  position: relative;
+  overflow: hidden;
+}
+
+.form-content div{
   margin-top: 15px;
 }
 
-.text-input{
-  width: 284px;
+input[type="text"]{
+  padding-left: 20px;
+  width: 265px;
   height: 41px;
+  color: #ccc;
+  font-size: 14px;
   border: 0;
   border-bottom: 2px solid #484948;
-
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f0f0e+0,111111+100,111111+100 */
   background: #0f0f0e; /* Old browsers */
   background: -moz-linear-gradient(top,  #0f0f0e 0%, #111111 100%, #111111 100%); /* FF3.6+ */
@@ -133,7 +230,26 @@ body{
   background: -ms-linear-gradient(top,  #0f0f0e 0%,#111111 100%,#111111 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #0f0f0e 0%,#111111 100%,#111111 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f0f0e', endColorstr='#111111',GradientType=0 ); /* IE6-9 */
+}
 
+input[type="text"]::-webkit-input-placeholder{
+    color: #ccc;
+}
+
+.form-content input[type="text"]:focus{
+  background: #1b5288;
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(105,157,205,0.85);
+  -moz-box-shadow: 0px 0px 12px 2px rgba(105,157,205,0.85);
+  box-shadow: 0px 0px 12px 2px rgba(105,157,205,0.85);
+}
+
+.checkbox-input{
+  margin-right: 47px;
+  color: #ccc;
+  font-size: 14px;
+}
+.checkbox-input label{
+  margin-left: 10px;
 }
 
 .submit-input{
@@ -158,14 +274,7 @@ body{
 
 }
 
-
-
-.form-wrapper{
-  /*font-size: 14px;*/
-  /*opacity: 0.631;*/
-}
-.form-wrapper p{
-  color: #cccccc;
-}
-
+.bottom-text{
+  margin: 22px auto;
+  font-size: 11px;
 }
