@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+table{
+  margin: 100px auto;
+  width: 500px;
+  height: 540px;
+  border-spacing: 0;
+}
+
+td{
+  border: 5px solid black;
+  border-color: black;
+}
+/*SET BORDER*/
+.no-border-top{
+  border-top: none;
+}
+.no-border-bottom{
+  border-bottom: none;
+}
+.no-border-left{
+  border-left: none;
+}
+.no-border-right{
+  border-right: none;
+}
+
+/*SET COLOR*/
+.set-yellow{
+  background-color: yellow;
+}
+.set-red{
+  background-color: red;
+}
+.set-blue{
+  background-color: blue;
+}
+
+/*SET DIMENSIONS*/
+.box{
+  width: 60px;
+  height: 60px;
+  background-color: #1F1D1D;
+}
+.row1{
+  height: 45px;
+}
+.row3{
+  height: 150px;
+}
+.row3-cell2{
+  width: 72px;
+}
+.row3-cell1{
+  width: 42px;
+}
+.row6{
+  height: 32px;
+}
+.row6-cell2{
+  background-color: #1F1D1D;
+}
+.row7{
+  height: 32px;
+}
