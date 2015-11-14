@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,26 +18,35 @@ html, body{
   height: 100%;
 }
 body{
-  font-family: "Tahoma", sans-serif;
+  font-family: "Helvetica Neue Regular", Tahoma, sans-serif;
 }
 
 .clearfix::after{
-  content: " ";
+  content: "";
   clear: both;
   display: block;
 }
 .main{
   height: 100%;
+  min-height: 750px;
+  min-width: 1000px;
+  overflow: hidden;
+  background-image: url('../img/Background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*HEADER*/
 .header{
   height: 36px;
   background-color: #085393;
+  min-width: 1000px;
 }
 
 /*HEADER MENU*/
 .header-menu{
   list-style: none;
+  min-width: 500px;
 }
 
 .header-menu a{
@@ -41,7 +62,7 @@ body{
   color: #fff;
 }
 
-.header .flag a{
+.flag a{
   color: #eaeaea;
   text-decoration: none;
   line-height: 36px;
@@ -61,9 +82,10 @@ body{
   border-left: 1px #56a2dc solid;
 }
 
-.header .enter{
+.enter{
   float: right;
   margin-right: 20px;
+  padding: 0 12px;
   border: 1px #4a9cd6 solid;
   background-color: #4ca8d9;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4faedb+0,2e7ac4+100 */
@@ -75,13 +97,12 @@ body{
 
 }
 
-.header .enter, .header .enter a{
+.enter, .enter a{
   color: #fff;
   line-height: 34px;
 }
 
 
-/*.header-menu li,*/
 .flag a,
 .flag span,
 .flag p,
@@ -89,8 +110,21 @@ body{
 .enter p{
   float: right;
   display: block;
-  padding: 0 16px;
 }
+
+.enter a,
+.enter p{
+  padding: 0 5px;
+}
+
+.flag span,
+.flag p{
+  padding: 0 5px;
+}
+.flag a{
+  margin-right: 14px;
+}
+
 .header-menu a{
   float: right;
   display: block;
@@ -105,11 +139,8 @@ body{
   text-align: center;
   margin: 0 auto;
   overflow: hidden;
-  background-image: url('../img/Background.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 100%;
+  margin-top: 36px;
 }
 
 .content:before {
@@ -141,7 +172,6 @@ body{
 }
 
 .form-body{
-  /*height:547px;*/
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   background: rgba(0, 0, 0, 0.6);
