@@ -40,7 +40,7 @@ body{
 }
 
 .clearfix::after{
-  content: '';
+  content: ' ';
   clear: both;
   display: block;
 }
