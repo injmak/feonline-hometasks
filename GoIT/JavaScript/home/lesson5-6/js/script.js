@@ -1,6 +1,8 @@
 
 function Timer(){
-  var initTime = null;
+  var startTime = null;
+  var stopTime = null;
+  var stopDelay = 0;
   var hoursElement = null;
   var secondsElement = null;
   var minutesElement = null;
@@ -13,12 +15,9 @@ function Timer(){
   var pause = true;
   var startButtonRef = null;
 
+  init();
+
   function init(){
-
-    if(initTime === null){
-      initTime = new Date();
-    }
-
     if(millisecondsElement === null){
       millisecondsElement = document.querySelector('#milliseconds');
     }
@@ -36,9 +35,19 @@ function Timer(){
     }
   }
 
+  function prepareTime(){
+    if(startTime === null){
+      startTime = new Date();
+    }
+
+    if(stopTime !== null){
+      stopDelay += (new Date() - stopTime);
+    }
+  }
+
   function clock(){
     var currentTime = new Date();
-    var interval = new Date(currentTime - initTime);
+    var interval = new Date(currentTime - startTime - stopDelay);
     hours = interval.getUTCHours();
     minutes = interval.getUTCMinutes();
     seconds = interval.getUTCSeconds();
@@ -53,18 +62,17 @@ function Timer(){
   }
 
   function start(){
-    init();
+    prepareTime();
     pause = false;
     timerId = window.setInterval(function(){
       clock();
       displayTimer();
    }, 4);
-   console.log('start ', timerId);
   }
 
   function stop(){
     pause = true;
-    console.log('stop ',timerId);
+    stopTime = new Date();
     window.clearInterval(timerId);
   }
 
@@ -80,21 +88,23 @@ function Timer(){
   };
 
   this.clear = function (event){
-    if(startButtonRef !== null){
-      startButtonRef.innerHTML = 'Start';
-    }
-
     stop();
     pause = true;
     milliseconds = 0;
     seconds = 0;
     minutes = 0;
     hours = 0;
-    initTime = new Date();
+    startTime = null;
+    stopTime = null;
+    stopDelay = 0;
     hoursElement.innerHTML = '00';
     minutesElement.innerHTML = '00';
     secondsElement.innerHTML = '00';
     millisecondsElement.innerHTML = '000';
+
+    if(startButtonRef !== null){
+      startButtonRef.innerHTML = 'Start';
+    }
   };
 }
 
