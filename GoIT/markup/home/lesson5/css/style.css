@@ -18,6 +18,12 @@ html, body{
   height: 100%;
 }
 body{
+  /*min-height: 750px;
+  min-width: 1000px;
+  background-image: url('../img/Background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;*/
   font-family: "Helvetica Neue Regular", Tahoma, sans-serif;
 }
 
@@ -43,13 +49,18 @@ body{
   min-width: 1000px;
 }
 
+.header__inner{
+  float: right;
+}
 /*HEADER MENU*/
 .header-menu{
+  float: left;
   list-style: none;
-  min-width: 500px;
+  min-width: 389px;
 }
 
 .header-menu a{
+  float: left;
   padding: 0 12px;
   display: block;
   line-height: 36px;
@@ -62,6 +73,9 @@ body{
   color: #fff;
 }
 
+.flag{
+  float: left;
+}
 .flag a{
   color: #eaeaea;
   text-decoration: none;
@@ -74,7 +88,7 @@ body{
 
 .flag a::after{
   content: "";
-  float: right;
+  float: left;
   display: block;
   margin-top: 3px;
   padding-left: 18px;
@@ -83,7 +97,7 @@ body{
 }
 
 .enter{
-  float: right;
+  float: left;
   margin-right: 20px;
   padding: 0 12px;
   border: 1px #4a9cd6 solid;
@@ -100,6 +114,10 @@ body{
 .enter, .enter a{
   color: #fff;
   line-height: 34px;
+}
+
+.enter a:hover{
+  text-decoration: none;
 }
 
 
@@ -125,12 +143,6 @@ body{
   margin-right: 14px;
 }
 
-.header-menu a{
-  float: right;
-  display: block;
-  padding: 0 12px;
-
-}
 
 
 /*CONTENT*/
@@ -156,6 +168,7 @@ body{
   vertical-align: middle;
   width: 555px;
   text-align: center;
+  /*margin-top: 140px;*/
 }
 .form-header{
   margin-bottom: 2px;
@@ -315,6 +328,7 @@ input[type="text"]::-webkit-input-placeholder{
   -moz-border-radius: 5px;
   border-radius: 5px;
   border-color: #5ea5e0;
+  cursor: pointer;
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4eabda+0,2e7ac4+100 */
   background: #4eabda; /* Old browsers */
