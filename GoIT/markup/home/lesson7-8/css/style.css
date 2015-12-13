@@ -32,11 +32,11 @@ body{
 
 .font-open-sans{
   font-family: "Open Sans Regular", sans-serif;
-  font-size: 16px;
+  /*font-size: 16px;*/
 }
 .font-league-gothic{
   font-family: "League Gothic Regular", impact, nimbus sans l, ubuntu condensed, monospace;
-  font-size: 30px;
+  /*font-size: 30px;*/
 }
 
 .clearfix::after{
@@ -48,6 +48,7 @@ body{
 .slider-form{
   text-align: center;
 }
+
 .slider-input{
   display: none;
 }
@@ -75,7 +76,7 @@ body{
 header{
   background: #fff url("../img/header.png") center;
   font-family: "League Gothic Regular", sans-serif;
-  padding-bottom: 165px;
+  padding-bottom: 22px;
 }
 
 .header-menu{
@@ -123,7 +124,7 @@ header{
 }
 
 .header__slide-wrapper{
-  /*margin-top: 25px;*/
+  margin-top: 134px;
 }
 
 .header__slide-round{
@@ -193,6 +194,7 @@ header{
   height: 271px;
   width: 427px;
   margin-top: 100px;
+  padding: 24px 37px;
 }
 
 .box-3__text{
@@ -200,16 +202,22 @@ header{
 }
 .box-3__text-header{
   color: #454545;
+  font-size: 30px;
+}
+
+
+
+.box-3__slide-round{
+
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
 }
 
 .box-3__slide-wrapper{
   margin-top: 25px;
 }
 
-.box-3__slide-round{
-  border: 1px solid #e8e8e8;
-  background-color: #fff;
-}
+
 .box-3__input-slide:checked + .box-3__slide-round::before{
     border: 1px solid black;
     background: #888888; /* Old browsers */
@@ -217,6 +225,43 @@ header{
     background: -webkit-linear-gradient(top,  #888888 0%,#787878 9%,#787878 9%,#787878 9%,#787878 9%,#787878 9%,#4a4a4a 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #888888 0%,#787878 9%,#787878 9%,#787878 9%,#787878 9%,#787878 9%,#4a4a4a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888888', endColorstr='#4a4a4a',GradientType=0 ); /* IE6-9 */
+}
+
+
+.box-3__message-header{
+  margin-bottom: 19px;
+  color: #454545;
+  font-size: 30px;
+}
+
+.box-3__content{
+  width: 455px;
+}
+
+.box-3__news{
+  text-decoration: none;
+  color: #454545;
+  display: block;
+  line-height: 25px;
+  margin-bottom: 20px;
+
+}
+
+.box-3__news h4{
+  font-weight: bold;
+}
+
+.box-3__more-news{
+  /*display: block;*/
+  text-decoration: none;
+  color: #454545;
+  float: right;
+  font-size: 18px;
+}
+
+.box-3__news img{
+  float: left;
+  margin-right: 22px;
 }
 
 /*BOX-4*/
