@@ -2,19 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lesson5-6</title>
+  <title>Stop Watch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 </head>
 <body>
-  <div class="timer">
-    <h1>
-      <span class="timer__hours" id="hours">00</span>
-      <span class="timer__minutes" id="minutes">00</span>
-      <span class="timer__seconds" id="seconds">00</span>
-      <span class="timer__miliseconds" id="milliseconds">000</span>
-    </h1>
-    <button class="timer__start" id="start">Start</button>
-    <button class="timer__clear" id="clear">Clear</button>
-
+  <div class="container container-table">
+    <div class="row vertical-center-row">
+        <div class="text-center col-md-4 col-md-offset-4">
+          <h1>
+            <span class="timer__hours" id="hours">00</span>
+            <span class="timer__minutes" id="minutes">00</span>
+            <span class="timer__seconds" id="seconds">00</span>
+            <span class="timer__miliseconds" id="milliseconds">000</span>
+          </h1>
+          <button class="btn btn-primary btn-lg custom-button" id="start">Start</button>
+          <button class="btn btn-warning btn-lg custom-button" id="clear">Clear</button>
+        </div>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>

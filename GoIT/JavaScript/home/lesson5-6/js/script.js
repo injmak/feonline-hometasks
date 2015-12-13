@@ -58,7 +58,15 @@ function Timer(){
     hoursElement.innerHTML = hours > 9 ? hours : '0' + hours;
     minutesElement.innerHTML = minutes > 9 ? minutes : '0' + minutes;
     secondsElement.innerHTML = seconds > 9 ? seconds : '0' + seconds;
-    millisecondsElement.innerHTML = milliseconds;
+
+    if(milliseconds < 10){
+      millisecondsElement.innerHTML = '00' + milliseconds;
+    }else if (milliseconds > 9 && milliseconds < 99) {
+      millisecondsElement.innerHTML = '0' + milliseconds;
+    }else {
+      millisecondsElement.innerHTML = milliseconds;
+    }
+
   }
 
   function start(){

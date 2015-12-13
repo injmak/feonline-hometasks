@@ -1,0 +1,13 @@
+html, body, .container-table {
+    height: 100%;
+}
+.custom-button{
+  width: 100px;
+}
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
