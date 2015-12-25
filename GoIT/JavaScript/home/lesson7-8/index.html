@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson7-8 JS</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/script-tooltip.js"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="top-nav">
+      <nav class="top-bar">
+        <ul>
+          <li><a href="#">tabbed</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content-wrapper">
+      <div class="tabs">
+        <section class="tab-header">
+          <ul>
+            <li id="js-tab1" class="tab-header__li-active"><a href="">Personal Information</a></li>
+            <li id="js-tab2"><a href="">Account Information</a></li>
+            <li id="js-tab3"><a href="">Description</a></li>
+          </ul>
+        </section>
+        <section class="tab-content">
+          <div id="js-tab-panel1" class="tab-panel">
+              <fieldset>
+                <form id="js-fullName-form" action="">
+                  <div class="input-content">
+                    <div>
+                      <label for="js-firstName-input">First Name</label>
+                      <input id="js-firstName-input"  type="text">
+                    </div>
+                    <div>
+                      <label for="js-lastName-input">Last Name</label>
+                      <input id="js-lastName-input"  type="text">
+                    </div>
+                    <div>
+                      <label for="js-addressName-input">Address</label>
+                      <input id="js-addressName-input"  type="text">
+                    </div>
+                  </div>
+                  <div class="button-content">
+                    <button class="btn-clear btn-ui" id="js-clearPers-input">Clear</button>
+                    <button class="btn-submit btn-ui" id="js-submitPers-input">Submit</button>
+                  </div>
+                </form>
+              </fieldset>
+          </div>
+          <div id="js-tab-panel2" class="tab-panel">
+            <fieldset>
+              <form id="js-account-form" action="">
+                <div class="input-content">
+                  <div class="input-content__row">
+                    <div>
+                      <label for="js-accountNick-input">Account Nick</label>
+                      <input id="js-accountNick-input"  type="text">
+                    </div>
+                    <div>
+                      <label for="js-accountNumber-input">Account Number</label>
+                      <input id="js-accountNumber-input"  type="text">
+                    </div>
+                    <div>
+                      <label for="js-availableSum-input">Available Sum</label>
+                      <input id="js-availableSum-input"  type="text">
+                    </div>
+                  </div>
+                  <div class="input-content__row">
+                    <div>
+                      <label for="js-creditSum-input">Credit Sum</label>
+                      <input id="js-creditSum-input"  type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="button-content">
+                  <button class="btn-clear btn-ui" id="js-clearAcco-input">Clear</button>
+                  <button class="btn-submit btn-ui" id="js-submitAcco-input">Submit</button>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+          <div id="js-tab-panel3" class="tab-panel">
+            <p>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, beatae, alias! Error debitis eum natus, alias doloribus quisquam eos voluptatibus inventore laboriosam quia, quaerat nulla ipsa. Molestiae facilis animi veritatis.</span>
+              <span>Sit voluptate quae dolor odio, harum, vitae? Doloribus qui suscipit cupiditate adipisci at repellat ut consequuntur placeat amet accusamus laudantium nisi, veniam corporis ex a laborum, maiores asperiores ipsa explicabo.</span>
+              <span>Dolores, velit quos quia. Neque totam, officiis eligendi ratione earum numquam maxime doloremque delectus consequuntur quam dolorem! Deleniti quod assumenda pariatur doloribus repellat, dolores eius consequuntur facilis consequatur magni necessitatibus.</span>
+              <span>Quibusdam sint, sapiente esse error et animi obcaecati nesciunt maiores alias numquam. Nemo, repudiandae, tempora. Est optio aspernatur doloremque porro vel perspiciatis voluptates, sunt dolores recusandae voluptate reiciendis. Error, nesciunt?</span>
+              <span>Iure aperiam assumenda, maxime at inventore aut perspiciatis molestiae repellendus, officia molestias, consectetur debitis fugiat temporibus praesentium reprehenderit vero! Facilis cupiditate quasi, earum perferendis fuga doloribus iste nisi, deleniti quam.</span>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
